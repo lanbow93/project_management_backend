@@ -1,12 +1,12 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from todos.views import TodoViewSet
+from projectmanagementapp.views import ProjectViewSet
 
 # create a new router
 router = routers.DefaultRouter()
 # register our viewsets
-router.register(r'todos', TodoViewSet) #register "/todos" routes
+router.register(r'project', ProjectViewSet) #register "/project" routes
 
 
 urlpatterns = [
