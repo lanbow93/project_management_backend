@@ -4,7 +4,7 @@ from rest_framework import permissions
 from .serializers import ProjectSerializer
 
 
-class TodoViewSet(viewsets.ModelViewSet):
+class ProjectViewSet(viewsets.ModelViewSet):
     ## The Main Query for the index route
     queryset = Project.objects.all()
     # The serializer class for serializing output
